@@ -18,7 +18,7 @@ var App = React.createClass({
         <Tabs.Panel title='Tab #1'>
           <h2>Content #1</h2>
         </Tabs.Panel>
-        <Tabs.Panel title='Tab #2'>
+        <Tabs.Panel className='-disabled' title='Tab #2'>
           <h2>Content #2</h2>
         </Tabs.Panel>
         <Tabs.Panel title='Tab #3'>

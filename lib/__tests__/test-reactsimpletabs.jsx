@@ -21,6 +21,7 @@ function usedPropsAreInPropTypes (renderedComponent) {
   }).length;
 };
 
+
 describe('Tabs', function() {
   var React = require('react/addons');
   var TU = React.addons.TestUtils;
@@ -158,6 +159,24 @@ describe('Tabs', function() {
       expect(menuItem.getDOMNode().children[0].innerHTML).toEqual('item1');
     });
   });
+
+  // describe('Tab.Panel', function () {
+  //   it('adds className correctly when it\'s passed', function () {
+  //       var instance = TU.renderIntoDocument(
+  //         <Tabs tabActive={2}>
+  //           <Tabs.Panel title='item1'>content1</Tabs.Panel>
+  //           <Tabs.Panel className='second-tab' title='item2'>content2</Tabs.Panel>
+  //         </Tabs>
+  //       );
+  //
+  //       var menuItem = TU.findRenderedDOMComponentWithClass(instance, 'tabs-menu-item is-active second-tab');
+  //       var panel = TU.findRenderedDOMComponentWithClass(instance, 'tab-panel');
+  //
+  //       expect(panel.getDOMNode().children[0].innerHTML).toEqual('content2');
+  //       expect(menuItem.getDOMNode().children[0].innerHTML).toEqual('item2');
+  //
+  //     });
+  // });
 
   describe('onBeforeChange', function(){
     var sim = TU.Simulate;
